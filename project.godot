@@ -11,18 +11,27 @@ config_version=5
 [application]
 
 config/name="SketchDuty"
+run/main_scene="uid://du3xsii8qs7o8"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Game="*uid://bc0q7s3hf5g1r"
 
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
-window/size/mode=3
+window/size/mode=4
 window/size/resizable=false
 window/size/borderless=true
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gdUnit4/plugin.cfg")
 
 [physics]
 
